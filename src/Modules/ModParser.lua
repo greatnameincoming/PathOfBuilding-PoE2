@@ -400,6 +400,8 @@ local modNameList = {
 	["damage taken recouped as life, mana and energy shield"] = { "LifeRecoup", "EnergyShieldRecoup", "ManaRecoup" },
 	["ailment threshold"] = "AilmentThreshold",
 	["elemental ailment threshold"] = "AilmentThreshold",
+	["slowing potency of debuffs on you"] = "SlowPotencyOnSelf",
+	["slowing potency of debuffs on you"] = "SlowPotencyOnSelf",
 	-- Stun/knockback modifiers
 	["stun recovery"] = "StunRecovery",
 	["stun and block recovery"] = "StunRecovery",

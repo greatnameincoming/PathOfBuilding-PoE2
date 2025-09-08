@@ -1899,7 +1899,7 @@ function calcs.defence(env, actor)
 	output.CurseEffectOnSelf = m_max(modDB:More(nil, "CurseEffectOnSelf") * (100 + modDB:Sum("INC", nil, "CurseEffectOnSelf")), 0)
 	output.ExposureEffectOnSelf = modDB:More(nil, "ExposureEffectOnSelf") * (100 + modDB:Sum("INC", nil, "ExposureEffectOnSelf"))
 	output.WitherEffectOnSelf = modDB:More(nil, "WitherEffectOnSelf") * (100 + modDB:Sum("INC", nil, "WitherEffectOnSelf"))
-
+	output.SlowPotencyOnSelf = modDB:More(nil, "SlowPotencyOnSelf") * (100 + modDB:Sum("INC", nil, "SlowPotencyOnSelf"))
 	-- Ailment duration on self
 	output.DebuffExpirationRate = modDB:Sum("BASE", nil, "SelfDebuffExpirationRate")
 	output.DebuffExpirationModifier = 10000 / (100 + output.DebuffExpirationRate)

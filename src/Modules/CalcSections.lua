@@ -1803,7 +1803,8 @@ return {
 	{ label = "Wither Effect", { format = "{1:output:WitherEffectOnSelf}%", { modName = "WitherEffectOnSelf" }, }, },
 	{ label = "Debuff Dur. Mult.", haveOutput = "showDebuffExpirationModifier", { format = "{1:output:DebuffExpirationModifier}%", { modName = "SelfDebuffExpirationRate" }, }, },
 	{ label = "Weap. Swap Speed", { format = "{0:output:WeaponSwapSpeed} ms", { breakdown = "WeaponSwapSpeedMod" }, { modName = { "WeaponSwapSpeed" } }, }, },
-} }, { defaultCollapsed = false, label = "Stun Duration", data = {
+	{ label = "Slowing Potency",     { format = "{1:output:SlowPotencyOnSelf}%", { breakdown = "SlowPotencyOnSelf" }, { modName = { "SlowPotencyOnSelf" } }, }, },
+	} }, { defaultCollapsed = false, label = "Stun Duration", data = {
 	{ label = "Stun Avoid Chance", haveOutput = "StunAvoidChance", { format = "{0:output:StunAvoidChance}%",  { breakdown = "StunAvoidChance" }, { modName = "AvoidStun" }, }, },
 	{ label = "Stun Threshold", { format = "{0:output:StunThreshold}", { breakdown = "StunThreshold" }, { modName = { "StunThreshold", "StunThresholdManaPercent", "StunThresholdEnergyShieldPercent" } }, }, },
 	{ label = "Stun Chance", { format = "{0:output:SelfStunChance}%", { breakdown = "SelfStunChance" }, }, },
