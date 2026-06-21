@@ -2894,6 +2894,8 @@ function calcs.buildDefenceEstimations(env, actor)
 			output[damageType.."AegisDisplay"] = output[damageType.."Aegis"] + output["sharedElementalAegis"]
 		end
 	end
+	-- Sorcery Ward barrier (elemental aegis, or all-damage aegis under Ceremonial Ablution)
+	output.SorceryWard = modDB:Flag(nil, "Condition:SorceryWard") and m_max(output["sharedElementalAegis"], output["sharedAegis"]) or 0
 
 	-- taken from allies before you, eg. frost shield
 	do

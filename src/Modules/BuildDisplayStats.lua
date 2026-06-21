@@ -116,6 +116,8 @@ local displayStats = {
 	{ },
 	{ stat = "Darkness", label = "Total Darkness", fmt = "d", color = colorCodes.CHAOS},
 	{ stat = "ReservedDarkness", label = "Reserved Darkness", fmt ="d", color = colorCodes.CHAOS},
+	{ stat = "Ward", label = "Runic Ward", fmt = "d", color = colorCodes.WARD, condFunc = function(v) return v > 0 end },
+	{ stat = "SorceryWard", label = "Sorcery Ward", fmt = "d", color = colorCodes.WARD, condFunc = function(v) return v > 0 end },
 	{ },
 	{ stat = "Life", label = "Total Life", fmt = "d", color = colorCodes.LIFE, compPercent = true },
 	{ stat = "Spec:LifeInc", label = "%Inc Life", fmt = "d%%", color = colorCodes.LIFE, condFunc = function(v,o) return v > 0 and o.Life > 1 end },
